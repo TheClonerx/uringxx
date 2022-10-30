@@ -1,0 +1,14 @@
+---
+Language: Cpp
+BasedOnStyle: WebKit
+IndentRequires: false
+PointerAlignment: Right
+QualifierAlignment: Right
+# adds an space after requires
+# SeparateDefinitionBlocks: Always
+FixNamespaceComments: true
+ShortNamespaceLines: 0
+AlignArrayOfStructures: Right
+AllowShortFunctionsOnASingleLine: false
+# clang-format v15.0.0
+# RequiresClausePosition: OwnLine
