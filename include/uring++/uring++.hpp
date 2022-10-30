@@ -1,0 +1,4 @@
+#ifndef URINGXX_URINGXX_HPP
+#define URINGXX_URINGXX_HPP
+
+#endif
