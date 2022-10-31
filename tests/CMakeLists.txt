@@ -23,5 +23,12 @@ function(tcx_add_tests)
     endforeach()
 endfunction()
 
+function(enable_cpp20)
+    foreach(NAME IN LISTS ARGV)
+        set_target_properties(${NAME}_test PROPERTIES CXX_STANDARD 17 CMAKE_CXX_STANDARD_REQUIRED ON)
+    endforeach()
+endfunction()
 
-tcx_add_tests(builds)
+
+tcx_add_tests(builds17 builds20 instantiation17 instantiation20)
+enable_cpp20(builds20 instantiation20)

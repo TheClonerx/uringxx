@@ -10,6 +10,7 @@ target_include_directories(uring++ INTERFACE
 target_sources(uring++ INTERFACE
     ${CMAKE_SOURCE_DIR}/include/uring++/uring++.hpp
 )
+target_link_libraries(uring++ INTERFACE uring)
 
 if (ENABLE_TESTING)
     enable_testing()
