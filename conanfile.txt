@@ -1,0 +1,10 @@
+[requires]
+liburing/2.2
+
+[build_requires]
+cmake/[3.24.*]
+
+[generators]
+CMakeToolchain
+CMakeDeps
+VirtualBuildEnv
