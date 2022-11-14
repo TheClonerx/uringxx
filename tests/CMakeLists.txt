@@ -6,8 +6,7 @@ target_compile_options(warnings INTERFACE
     -Werror=pedantic
     # this generates too many errors, and im too lazy to do them all rn
     # -Werror=conversion
-    -Weverything
-    -Wno-c++98-compat
+    $<$<CXX_COMPILER_ID:Clang>:-Weverything -Wno-c++98-compat>
 )
 
 function(tcx_add_test NAME)
