@@ -16,7 +16,7 @@ namespace uring {
 class uring;
 
 template <typename F>
-struct is_completion : std::bool_constant<std::is_invocable_v<F, uring &, std::int32_t> || std::is_invocable_v<F, uring &, io_uring_sqe &>> {
+struct is_completion : std::bool_constant<std::is_invocable_v<F, uring &, std::int32_t> || std::is_invocable_v<F, uring &, io_uring_cqe &>> {
 };
 
 template <typename F>
