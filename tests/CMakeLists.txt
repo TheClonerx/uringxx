@@ -31,5 +31,5 @@ function(enable_cpp20)
 endfunction()
 
 
-tcx_add_tests(builds17 builds20 instantiation17 instantiation20)
+tcx_add_tests(builds17 builds20 instantiation17 instantiation20 submit_write)
 enable_cpp20(builds20 instantiation20)
